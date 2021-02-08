@@ -1,0 +1,17 @@
+.burger-button-font-active{
+    transform:rotate(180deg);
+    font-size:20px;
+}
+
+#burger-button-font{
+    transition: transform 0.3s ease;
+}
+
+.burger-menu-active{
+    opacity: 1 ;
+    height: 250px ;
+}
+
+body{
+    background: #fff ;
+}

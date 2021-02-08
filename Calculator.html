@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+    <script src="Calculator.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container">
+        <div class="display-container">
+            <input type="text" id="display" disabled placeholder="0" max="100">
+        </div>
+        <div class="button-container">
+            <button id="clear" class="light" onclick="clearAll()"> C </button>
+            <button id="back" class="light" onclick="deleteLastNumber()"> &#8592; </button>
+            <button id="percentage" class="signs" onclick="addSign('percentage')"> &#37; </button>
+            <button id="seven" class="light" onclick="addNum(7)"> 7 </button>
+            <button id="eight" class="light" onclick="addNum(8)"> 8 </button>
+            <button id="nine" class="light" onclick="addNum(9)"> 9 </button>
+            <button id="addition" class="signs" onclick="addSign('addition')"> &#43; </button>
+            <button id="four" class="light" onclick="addNum(4)"> 4 </button>
+            <button id="five" class="light" onclick="addNum(5)"> 5 </button>
+            <button id="six" class="light" onclick="addNum(6)"> 6 </button>
+            <button id="substraction" class="signs" onclick="addSign('substraction')"> &#x2212; </button>
+            <button id="one" class="light" onclick="addNum(1)"> 1 </button>
+                    <button id="two" class="light" onclick="addNum(2)"> 2 </button>
+            <button id="three" class="light" onclick="addNum(3)"> 3 </button>
+            <button id="multiplication" class="signs" onclick="addSign('multiplication')"> &#x00D7; </button>
+            <button id="dot" class="signs" onclick="addSign('dot')"> &#46; </button>
+            <button id="zero" class="light" onclick="addNum(0)"> 0 </button>
+            <button id="brackets" class="signs" onclick="addBrackets()"> () </button>
+            <button id="division" class="signs" onclick="addSign('division')"> &#247; </button>
+            <button id="plusminus" class="signs" onclick="addSign('plusminus')"> &#x00B1; </button>
+            <button id="answer" class="equal" onclick="calculator()"> = </button>
+            <footer id="footer"></footer>
+        </div>
+    </div>
+</body>
+
+</html>
